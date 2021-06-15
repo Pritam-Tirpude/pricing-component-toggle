@@ -1,0 +1,23 @@
+@import "global";
+@import "main-container";
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../images/bg-top.svg") no-repeat right top;
+    background-size: contain;
+  }
+  main {
+    padding: 5rem;
+  }
+  .pricing-cards {
+    flex-direction: column;
+
+    .professional-card {
+      margin-top: 2rem;
+    }
+
+    .master-card {
+      margin-top: 2rem;
+    }
+  }
+}

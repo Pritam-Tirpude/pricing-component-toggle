@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  background: url("/images/bg-top.svg") no-repeat right, url("/images/bg-bottom.svg") no-repeat left bottom;
+  background-color: #f6f6fe;
+}
+
+h2 {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 3rem;
+  color: #6d708d;
+}
+
+.toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.toggle-container span {
+  font-size: 1.8rem;
+  color: #b3b5c6;
+}
+
+.toggle-container .annually.active {
+  color: #494c5f;
+}
+
+.toggle-container .monthly {
+  margin-left: 1rem;
+}
+
+.toggle-container .monthly.highlighted {
+  color: #494c5f;
+}
+
+.toggle-container .toggle {
+  visibility: hidden;
+}
+
+.toggle-container .label {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background: #a3a8f0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 16px 0;
+}
+
+.toggle-container .label .ball {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background: white;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 3px;
+  left: 3px;
+  -webkit-animation: slideOff 0.3s linear forwards;
+          animation: slideOff 0.3s linear forwards;
+}
+
+.toggle-container .toggle:checked + .label {
+  background-color: #696fdd;
+}
+
+.toggle-container .toggle:checked + .label .ball {
+  -webkit-animation: slideOn 0.3s linear forwards;
+          animation: slideOn 0.3s linear forwards;
+}
+
+.pricing-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 5rem;
+}
+
+.pricing-cards .basic-card {
+  padding: 4rem 3rem;
+  text-align: center;
+  background: white;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 340px;
+  height: 430px;
+}
+
+.pricing-cards .basic-card h4 {
+  font-size: 2rem;
+  color: #494c5f;
+  padding-bottom: 1rem;
+}
+
+.pricing-cards .basic-card h5 {
+  font-size: 7rem;
+  font-weight: bolder;
+  color: #494c5f;
+}
+
+.pricing-cards .basic-card span {
+  position: relative;
+  font-size: 5rem;
+  top: -10px;
+}
+
+.pricing-cards .basic-card .line-basic {
+  width: 100%;
+  height: 2px;
+  background: #494c5f;
+  opacity: 0.2;
+}
+
+.pricing-cards .basic-card h6 {
+  font-size: medium;
+  padding: 1.5rem;
+  color: #494c5f;
+}
+
+.pricing-cards .basic-card button {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  width: 100%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.pricing-cards .basic-card button:hover {
+  background: transparent;
+  border: 1px solid #494c5f;
+  color: #696fdd;
+}
+
+.pricing-cards .professional-card {
+  padding: 5.5rem 3rem;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  border-radius: 0.5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 340px;
+  height: 460px;
+}
+
+.pricing-cards .professional-card h4 {
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.pricing-cards .professional-card h5 {
+  font-size: 7rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.pricing-cards .professional-card span {
+  position: relative;
+  font-size: 5rem;
+  top: -10px;
+}
+
+.pricing-cards .professional-card .line-pro {
+  width: 100%;
+  height: 2px;
+  background: #f6f6fe;
+  opacity: 0.2;
+}
+
+.pricing-cards .professional-card h6 {
+  font-size: medium;
+  padding: 1.5rem;
+  color: white;
+}
+
+.pricing-cards .professional-card button {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: white;
+  width: 100%;
+  color: #696fdd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.pricing-cards .professional-card button:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.pricing-cards .master-card {
+  padding: 3rem 3rem;
+  text-align: center;
+  background: white;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 340px;
+  height: 430px;
+}
+
+.pricing-cards .master-card h4 {
+  font-size: 2rem;
+  color: #494c5f;
+  padding-bottom: 1rem;
+}
+
+.pricing-cards .master-card h5 {
+  font-size: 7rem;
+  font-weight: bolder;
+  color: #494c5f;
+}
+
+.pricing-cards .master-card span {
+  position: relative;
+  font-size: 5rem;
+  top: -10px;
+}
+
+.pricing-cards .master-card .line-master {
+  width: 100%;
+  height: 2px;
+  background: #494c5f;
+  opacity: 0.2;
+}
+
+.pricing-cards .master-card h6 {
+  font-size: medium;
+  padding: 1.5rem;
+  color: #494c5f;
+}
+
+.pricing-cards .master-card button {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+  width: 100%;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.pricing-cards .master-card button:hover {
+  background: transparent;
+  border: 1px solid #494c5f;
+  color: #696fdd;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@-webkit-keyframes slideOn {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+}
+
+@keyframes slideOn {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+}
+
+@-webkit-keyframes slideOff {
+  0% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: url("../images/bg-top.svg") no-repeat right top;
+    background-size: contain;
+  }
+  main {
+    padding: 5rem;
+  }
+  .pricing-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pricing-cards .professional-card {
+    margin-top: 2rem;
+  }
+  .pricing-cards .master-card {
+    margin-top: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

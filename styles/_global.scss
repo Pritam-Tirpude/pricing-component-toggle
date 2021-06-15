@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary_gradient_one: hsl(236, 72%, 79%);
+$primary_gradient_two: hsl(237, 63%, 64%);
+
+$neutral_very_light_grayish_blue: hsl(240, 78%, 98%);
+$neutral_light_grayish_blue: hsl(234, 14%, 74%);
+$neutral_grayish_blue: hsl(233, 13%, 49%);
+$neutral_dark_grayish_blue: hsl(232, 13%, 33%);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  background: url("/images/bg-top.svg") no-repeat right,
+    url("/images/bg-bottom.svg") no-repeat left bottom;
+  background-color: $neutral_very_light_grayish_blue;
+}

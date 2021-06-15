@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <header>
+      <h2>Our Pricing</h2>
+      <div class="toggle-container">
+        <span class="annually active">Annually</span>
+        <input type="checkbox" id="checkbox" class="toggle" />
+        <label class="label" for="checkbox">
+          <div class="ball"></div>
+        </label>
+        <span class="monthly">Monthly</span>
+      </div>
+    </header>
+    <main role="main">
+      <div class="pricing-cards">
+        <div class="basic-card">
+          <h4>Basic</h4>
+          <h5 id="basic-dollar"><span>$</span>19.99</h5>
+          <div class="line-basic"></div>
+          <h6>500 GB Storage</h6>
+          <div class="line-basic"></div>
+          <h6>2 Users Allowed</h6>
+          <div class="line-basic"></div>
+          <h6>Send up to 3 GB</h6>
+          <button>Learn More</button>
+        </div>
+        <div class="professional-card">
+          <h4>Professional</h4>
+          <h5 id="pro-dollar"><span>$</span>24.99</h5>
+          <div class="line-pro"></div>
+          <h6>1 TB Storage</h6>
+          <div class="line-pro"></div>
+          <h6>5 Users Allowed</h6>
+          <div class="line-pro"></div>
+          <h6>Send up to 10 GB</h6>
+          <button>Learn More</button>
+        </div>
+        <div class="master-card">
+          <h4>Master</h4>
+          <h5 id="master-dollar"><span>$</span>39.99</h5>
+          <div class="line-master"></div>
+          <h6>2 TB Storage</h6>
+          <div class="line-master"></div>
+          <h6>10 Users Allowed</h6>
+          <div class="line-master"></div>
+          <h6>Send up to 20 GB</h6>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Pritam-Tirpude" target="_blank"
+        >Pritam Tirpude</a
+      >.
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
