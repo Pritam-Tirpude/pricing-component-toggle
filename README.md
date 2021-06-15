@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Sunnyside Landing Page Solution](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub/html5-css3-sass-javascript-flex-grid-xsqSoj0cq)
-- Live Site URL: [Live Site](https://sunnyside-landing-site.netlify.app/)
+- Solution URL: [PRicing Component Toggle Master Solution](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC/hub/html-css-sass-javascript-eyR86euZD)
+- Live Site URL: [Live Site](https://pricing-component-master.netlify.app/)
 
 ## My process
 
