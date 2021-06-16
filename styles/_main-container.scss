@@ -136,6 +136,7 @@ h2 {
   .professional-card {
     padding: 5.5rem 3rem;
     text-align: center;
+    z-index: 10;
     background: linear-gradient(
       to right,
       $primary_gradient_one,

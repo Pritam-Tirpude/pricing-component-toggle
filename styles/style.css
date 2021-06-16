@@ -198,6 +198,7 @@ h2 {
 .pricing-cards .professional-card {
   padding: 5.5rem 3rem;
   text-align: center;
+  z-index: 10;
   background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(to right, #a3a8f0, #696fdd);
   border-radius: 0.5rem;
